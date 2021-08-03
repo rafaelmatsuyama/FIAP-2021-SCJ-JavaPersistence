@@ -1,0 +1,9 @@
+create keyspace portal with replication={'class':'SimpleStrategy', 'replication_factor':1};
+
+use portal;
+ 
+CREATE TABLE noticia(
+   id timeuuid PRIMARY KEY,
+   titulo text,
+   descricao text
+);
